@@ -19,5 +19,4 @@
   </ItemGroup>
 
   <Import Project="..\bep.targets" />
-
 </Project>
