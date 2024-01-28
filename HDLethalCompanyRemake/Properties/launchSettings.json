@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Lethal Company": {
+      "commandName": "Executable",
+      "executablePath": "$(GameDir)/Lethal Company.exe",
+      "workingDirectory": "$(GameDir)"
+    }
+  }
+}

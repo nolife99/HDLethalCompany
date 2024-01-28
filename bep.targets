@@ -1,0 +1,151 @@
+<Project>
+  <PropertyGroup>
+    <GameDir>C:\Program Files (x86)\Steam\steamapps\common\Lethal Company</GameDir>
+    <BepInEx>$(GameDir)\BepInEx\core</BepInEx>
+    <Managed>$(GameDir)\Lethal Company_Data\Managed</Managed>
+    <Plugins>$(GameDir)\BepInEx\plugins</Plugins>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(BepInEx)\0Harmony.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\BepInEx.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\BepInEx.Harmony.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\BepInEx.Preloader.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\HarmonyXInterop.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\Mono.Cecil.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\Mono.Cecil.Mdb.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\Mono.Cecil.Pdb.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\Mono.Cecil.Rocks.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\MonoMod.RuntimeDetour.dll" Private="false"/>
+    <Reference Include="$(BepInEx)\MonoMod.Utils.dll" Private="false"/>
+
+    <Reference Include="$(Managed)\Assembly-CSharp.dll" Private="false"/>
+    <Reference Include="$(Managed)\ClientNetworkTransform.dll" Private="false"/>
+    <Reference Include="$(Managed)\Mono.Security.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.AI.Navigation.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Animation.Rigging.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Animation.Rigging.DocCodeExamples.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Burst.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Burst.Unsafe.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Collections.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Collections.LowLevel.ILSupport.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.InputSystem.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.InputSystem.ForUI.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Jobs.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Mathematics.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Multiplayer.Tools.Common.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Multiplayer.Tools.MetricTypes.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Multiplayer.Tools.NetStats.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Multiplayer.Tools.NetStatsMonitor.Component.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Multiplayer.Tools.NetStatsMonitor.Configuration.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Multiplayer.Tools.NetStatsMonitor.Implementation.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Multiplayer.Tools.NetStatsReporting.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Multiplayer.Tools.NetworkProfiler.Runtime.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Multiplayer.Tools.NetworkSolutionInterface.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Netcode.Components.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Netcode.Runtime.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Networking.Transport.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.ProBuilder.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.ProBuilder.Csg.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.ProBuilder.KdTree.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.ProBuilder.Poly2Tri.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.ProBuilder.Stl.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Profiling.Core.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.RenderPipelines.Core.Runtime.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.RenderPipelines.Core.ShaderLibrary.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.RenderPipelines.HighDefinition.Runtime.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Authentication.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Analytics.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Configuration.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Device.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Environments.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Environments.Internal.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Internal.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Networking.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Registration.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Scheduler.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Telemetry.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Core.Threading.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.QoS.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Services.Relay.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.TextMeshPro.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.Timeline.dll" Private="false"/>
+    <Reference Include="$(Managed)\Unity.VisualEffectGraph.Runtime.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.AccessibilityModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.AIModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.AndroidJNIModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.AnimationModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.ARModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.AssetBundleModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.AudioModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.ClothModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.ClusterInputModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.ClusterRendererModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.ContentLoadModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.CoreModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.CrashReportingModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.DirectorModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.DSPGraphModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.GameCenterModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.GIModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.GridModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.HotReloadModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.ImageConversionModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.IMGUIModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.InputLegacyModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.InputModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.JSONSerializeModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.LocalizationModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.NVIDIAModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.ParticleSystemModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.PerformanceReportingModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.Physics2DModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.PhysicsModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.ProfilerModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.PropertiesModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.ScreenCaptureModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.SharedInternalsModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.SpriteMaskModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.SpriteShapeModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.StreamingModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.SubstanceModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.SubsystemsModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.TerrainModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.TerrainPhysicsModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.TextCoreFontEngineModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.TextCoreTextEngineModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.TextRenderingModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.TilemapModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.TLSModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UI.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UIElementsModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UIModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UmbraModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityAnalyticsCommonModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityAnalyticsModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityConnectModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityCurlModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityTestProtocolModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityWebRequestAssetBundleModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityWebRequestAudioModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityWebRequestModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityWebRequestTextureModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.UnityWebRequestWWWModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.VehiclesModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.VFXModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.VideoModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.VirtualTexturingModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.VRModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.WindModule.dll" Private="false"/>
+    <Reference Include="$(Managed)\UnityEngine.XRModule.dll" Private="false"/>
+  </ItemGroup>
+
+  <Target Name="MoveDLL" AfterTargets="Build" Condition="Exists('$(TargetDir)$(TargetName).dll')">
+    <Move SourceFiles="$(TargetDir)$(TargetName).dll" DestinationFolder="$(Plugins)"/>
+  </Target>
+</Project>
