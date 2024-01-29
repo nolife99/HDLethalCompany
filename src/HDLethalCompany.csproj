@@ -14,9 +14,5 @@
     <DebugType>none</DebugType>
   </PropertyGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\hdlethalcompany" />
-  </ItemGroup>
-
   <Import Project="..\bep.targets" />
 </Project>

@@ -12,22 +12,6 @@ internal static class GraphicsPatch
     public static float AnchorOffsetZ, Multiplier, WidthRes, HeightRes;
     public static AssetBundle Assets;
 
-    public static void SetShadowQuality(HDAdditionalCameraData cameraData)
-    {
-        if (!Assets)
-        {
-            Debug.LogError("HDLETHALCOMPANY: Something is wrong with the Asset Bundle - Null");
-            return;
-        }
-
-        cameraData.renderingPathCustomFrameSettingsOverrideMask.mask[(int)FrameSettingsField.ShadowMaps] = true;
-        cameraData.renderingPathCustomFrameSettings.SetEnabled(FrameSettingsField.ShadowMaps, ShadowQuality != 0);
-
-        QualitySettings.renderPipeline = 
-            ShadowQuality == 1 ? Assets.LoadAsset<HDRenderPipelineAsset>("Assets/HDLethalCompany/VeryLowShadowsAsset.asset") : 
-            (ShadowQuality == 2 ? Assets.LoadAsset<HDRenderPipelineAsset>("Assets/HDLethalCompany/MediumShadowsAsset.asset") : 
-            (HDRenderPipelineAsset)QualitySettings.renderPipeline);
-    }
     public static void SetLevelOfDetail(HDAdditionalCameraData cameraData)
     {
         if (LevelOfDetail == 1) return;
@@ -83,17 +67,14 @@ internal static class GraphicsPatch
             {
                 case 0: // Very Low
                     fog.volumetricFogBudget = .1f;
-                    fog.resolutionDepthRatio = .5f;
                     break;
 
                 case 2: // Medium
-                    fog.volumetricFogBudget = .333f;
-                    fog.resolutionDepthRatio = .5f;
+                    fog.volumetricFogBudget = .3f;
                     break;
 
                 case 3: // High
-                    fog.volumetricFogBudget = .666f;
-                    fog.resolutionDepthRatio = .5f;
+                    fog.volumetricFogBudget = .6f;
                     break;
             }
         }

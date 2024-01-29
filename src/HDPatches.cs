@@ -27,11 +27,11 @@ internal static class HDPatches
 
             if (!GraphicsPatch.Foliage) cameraData.GetComponent<Camera>().cullingMask &= ~(1 << 10);
 
-            GraphicsPatch.SetShadowQuality(cameraData);
             if (cameraData.gameObject.name is "SecurityCamera" or "ShipCamera") continue;
             GraphicsPatch.SetAntiAliasing(cameraData);
         }
 
+        QualitySettings.shadowResolution = (ShadowResolution)GraphicsPatch.ShadowQuality;
         GraphicsPatch.SetTextureQuality();
         GraphicsPatch.SetFogQuality();
 

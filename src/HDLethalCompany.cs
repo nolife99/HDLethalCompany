@@ -38,7 +38,7 @@ internal class HDLethalCompany : BaseUnityPlugin
         config_FogQuality = Config.Bind("EFFECTS", "Volumetric Fog Quality", 1, "<PRESETS -> | 0 = VERY LOW | 1 = VANILLA FOG | 2 = MEDIUM | 3 = HIGH >");
         config_EnableFog = Config.Bind("EFFECTS", "Enable Volumetric Fog", true, "Use as a last resort if lowering the fog quality is not enough to get decent performance");
         config_LOD = Config.Bind("EFFECTS", "Level Of Detail", 1, "<PRESETS -> | 0 = LOW (HALF DISTANCE) | 1 = VANILLA | 2 = HIGH (TWICE THE DISTANCE) >");
-        config_ShadowmapQuality = Config.Bind("EFFECTS", "Shadow Quality", 2, "<PRESETS -> 0 = VERY LOW (SHADOWS DISABLED) | 1 = LOW (256) | 2 = MEDIUM (1024) | 3 = VANILLA (2048) > - Shadowmap max resolution");
+        config_ShadowmapQuality = Config.Bind("EFFECTS", "Shadow Quality", 2, "<PRESETS -> 0 = VERY LOW | 1 = LOW (256) | 2 = MEDIUM (1024) | 3 = VANILLA (2048) > - Shadowmap max resolution");
         config_EnableFoliage = Config.Bind("EFFECTS", "Enable Foliage", true, "If the game camera should or not render bushes/grass (trees won't be affected)");
 
         GraphicsPatch.Foliage = config_EnableFoliage.Value;
